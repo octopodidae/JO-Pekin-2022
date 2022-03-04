@@ -1,0 +1,101 @@
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(50, 50, 50);
+}
+#myContainer {
+  width: 310px;
+  margin-left: 6%;
+  z-index: 10;
+  text-align: center;
+  box-shadow: none !important;
+}
+.colorPicker {
+  font-size: 0.875em;
+  text-align: center;
+  display: inline-table;
+  width: 100%;
+  max-width: 40em;
+  background: #fff;
+  padding: 2px;
+  border-radius: 0.35em;
+  box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.15);
+}
+.colorPicker label {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: table-cell;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 0;
+  text-transform: capitalize;
+  letter-spacing: -0.5em;
+  color: transparent;
+  opacity: 0.35;
+  width: 1%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(255, 255, 255, 0.1)),
+    to(rgba(0, 0, 0, 0.1))
+  );
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.1)
+  );
+  font-size: 1rem;
+  font-weight: bold;
+}
+.colorPicker label.or {
+  background-color: #fbbd08;
+  -webkit-tap-highlight-color: #fbbd08;
+}
+.colorPicker label.argent {
+  background-color: #838383;
+  -webkit-tap-highlight-color: #838383;
+}
+.colorPicker label.bronze {
+  background-color: #975b33;
+  -webkit-tap-highlight-color: #975b33;
+}
+.colorPicker label.total {
+  background-color: #27292a;
+  -webkit-tap-highlight-color: #27292a;
+}
+.colorPicker label:first-of-type {
+  border-radius: 0.25em 0 0 0.25em;
+}
+.colorPicker label:last-of-type {
+  border-radius: 0 0.25em 0.25em 0;
+}
+.colorPicker label:hover {
+  opacity: 1;
+  color: #fff;
+  letter-spacing: normal;
+}
+.colorPicker input {
+  display: none;
+}
+.colorPicker input:checked + label {
+  opacity: 1;
+  color: #fff;
+  letter-spacing: normal;
+}
+.esri-popup__main-container {
+  width: auto !important;
+}
+#title {
+  text-align: center !important;
+  /*   text-shadow: 0 0 3px rgb(0 0 0 / 40%) !important; */
+  box-shadow: none !important;
+  font-weight: 900;
+}
+.esri-feature__last-edited-info {
+  display: none !important;
+}
